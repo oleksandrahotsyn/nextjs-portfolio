@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -9,37 +10,26 @@ export default function Footer() {
         {/* Logo */}
         <Link
           href="/"
-          className="text-2xl font-bold tracking-tight text-white"
+          className="group flex items-center gap-3 transition-transform duration-300 hover:scale-105"
         >
-          SH<span className="text-blue-500">↗</span>
+          <Image
+            src="/black.png"
+            alt="SH Web Developer"
+            width={100}
+            height={50}
+            priority
+          />
         </Link>
 
         {/* Description */}
         <p className="max-w-md text-sm text-slate-400">
-          Створюю сучасні Landing Page та сайти-візитки для експертів,
-          фрилансерів і малого бізнесу.
+          Сучасні Landing Page та сайти-візитки для експертів, фрілансерів і малого бізнесу.
         </p>
-
-        {/* Navigation */}
-        <nav className="flex flex-wrap justify-center gap-6 text-sm text-slate-400">
-          <a href="#about" className="transition hover:text-white">
-            Про мене
-          </a>
-          <a href="#services" className="transition hover:text-white">
-            Послуги
-          </a>
-          <a href="#projects" className="transition hover:text-white">
-            Проєкти
-          </a>
-          <a href="#contact" className="transition hover:text-white">
-            Контакти
-          </a>
-        </nav>
 
         {/* Socials */}
         <div className="flex gap-6">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/oleksandrahotsyn"
             target="_blank"
             rel="noopener noreferrer"
             className="text-slate-400 transition hover:text-white"
@@ -48,7 +38,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://t.me/yourusername"
+            href="https://t.me/SandraHotsy"
             target="_blank"
             rel="noopener noreferrer"
             className="text-slate-400 transition hover:text-white"
@@ -57,7 +47,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="mailto:hello@example.com"
+            href="sandrahotsy@gmail.com"
             className="text-slate-400 transition hover:text-white"
           >
             Email
