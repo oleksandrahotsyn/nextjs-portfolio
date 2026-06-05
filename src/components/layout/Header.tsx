@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 const navLinks = [
-  { label: "Про мене", href: "#about" },
   { label: "Послуги", href: "#services" },
   { label: "Проєкти", href: "#projects" },
   { label: "Переваги", href: "#benefits" },
