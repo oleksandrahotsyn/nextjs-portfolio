@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <Section className="border-b border-slate-200 bg-white pt-10 pb-14 md:pt-24 md:pb-20">
+    <Section className="border-b border-slate-200 bg-gradient-to-br from-blue-50 via-white to-white pt-28 pb-20">
       <Container>
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="text-left">
