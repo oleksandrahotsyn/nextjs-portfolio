@@ -21,33 +21,34 @@ const services = [
   {
     title: "Підключення форм",
     description:
-      "Форми заявки, кнопки зв’язку, Telegram або інші прості інтеграції.",
+      "Підключення форм заявки, кнопок зв’язку, Telegram або простих інтеграцій.",
   },
 ];
 
 export default function Services() {
   return (
-    <Section id="services" className="bg-white">
+    <Section id="services" className="bg-white py-20">
       <Container>
-        <SectionTitle
-          subtitle="Послуги"
-          title="Що я можу зробити для вас"
-        />
+        <SectionTitle subtitle="Послуги" title="Що я можу зробити для вас" />
 
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {services.map((service) => (
-            <div
+            <article
               key={service.title}
-              className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+              className="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-blue-200 hover:shadow-xl"
             >
-              <h3 className="mb-3 text-xl font-semibold text-slate-900">
+              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-50 text-lg font-bold text-blue-600 transition group-hover:bg-blue-600 group-hover:text-white">
+                ✓
+              </div>
+
+              <h3 className="mb-3 text-xl font-bold text-slate-900">
                 {service.title}
               </h3>
 
               <p className="text-sm leading-6 text-slate-600">
                 {service.description}
               </p>
-            </div>
+            </article>
           ))}
         </div>
       </Container>
