@@ -55,11 +55,11 @@ export default function TechStack() {
               return (
                 <div
                   key={tech.name}
-                  className="flex min-w-0 flex-[0_0_50%] justify-center sm:flex-[0_0_25%] lg:flex-[0_0_12.5%]"
+                  className="flex min-w-0 flex-[0_0_33.333%] justify-center sm:flex-[0_0_25%] lg:flex-[0_0_16.666%]"
                 >
                   <div className="flex flex-col items-center gap-2">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-xl border border-slate-200 bg-slate-50 text-slate-500 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-                      <Icon className="h-8 w-8" />
+                   <div className="flex h-20 w-20 items-center justify-center rounded-xl border border-blue-200 bg-blue-50 text-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+                      <Icon className="h-12 w-12" />
                     </div>
 
                     <p className="text-xs font-semibold text-slate-700">
