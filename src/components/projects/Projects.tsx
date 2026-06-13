@@ -3,21 +3,21 @@ import Section from "@/components/layout/Section";
 import SectionTitle from "@/components/ui/SectionTitle";
 import ProjectCard from "@/components/ui/ProjectCard";
 
-const projects = [
-  {
-    title: "Green Harvest",
+const projects = [  {
+    title: "WebStudio",
     description:
-      "Командний проєкт лендингу для сервісу органічних овочів. Адаптивний дизайн та сучасний користувацький інтерфейс.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    image: "/projects/green-harvest.jpg",
-    link: "https://bahioiiia.github.io/P14-GreenHarvest/",
+      "Адаптивний багатосторінковий сайт вебстудії з мобільним меню та сучасною версткою.",
+    technologies: ["HTML", "CSS", "SASS", "JavaScript"],
+    image: "/pr1.png",
+    link: "https://oleksandrahotsyn.github.io/markup-hw-06/",
   },
+
   {
     title: "Leleka Website",
     description:
       "Командний проєкт корпоративного сайту. Брала участь у налаштуванні SEO-метаданих та реалізації форми зворотного зв'язку.",
     technologies: ["React", "Vite", "JavaScript", "CSS"],
-    image: "/public/pr4.jpg",
+    image: "/pr4.jpg",
     link: "https://leleka-website.vercel.app/",
   },
   {
@@ -25,16 +25,16 @@ const projects = [
     description:
       "Командний проєкт портфоліо. У проєкті виконувала роль Team Lead та брала участь у розробці інтерфейсу.",
     technologies: ["HTML", "CSS", "JavaScript", "GitHub"],
-    image: "/projects/portfolio-fsdev.jpg",
+    image: "/pr2.png",
     link: "https://oleksandrahotsyn.github.io/P09-PortfolioFSDev/",
   },
   {
-    title: "WebStudio",
+    title: "Green Harvest",
     description:
-      "Адаптивний багатосторінковий сайт вебстудії з мобільним меню та сучасною версткою.",
-    technologies: ["HTML", "CSS", "SASS", "JavaScript"],
-    image: "/projects/webstudio.jpg",
-    link: "https://oleksandrahotsyn.github.io/markup-hw-06/",
+      "Командний проєкт лендингу для сервісу органічних овочів. Адаптивний дизайн та сучасний користувацький інтерфейс.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    image: "/pr3.png",
+    link: "https://bahioiiia.github.io/P14-GreenHarvest/",
   },
 ];
 
