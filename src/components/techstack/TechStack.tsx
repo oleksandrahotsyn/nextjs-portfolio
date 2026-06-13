@@ -33,12 +33,13 @@ export default function TechStack() {
   const scrollNext = () => emblaApi?.scrollNext();
 
   return (
-    <section className="border-y border-slate-200 bg-white py-6">
-      <h2 className="mb-6 text-center text-lg font-semibold text-slate-900">
-        Технології, з якими я працюю
-      </h2>
-
-      <div className="relative mx-auto max-w-6xl px-14">
+    <section className="py-10">
+      <div className="mx-auto w-full max-w-7xl px-6 lg:px-8">
+        <h2 className="mb-6 text-center text-lg font-semibold text-slate-900">
+          Технології, з якими я працюю
+        </h2>
+      </div> 
+      <div className="relative mx-auto max-w-7xl px-6 sm:px-12">
         <button
           type="button"
           onClick={scrollPrev}
@@ -55,10 +56,11 @@ export default function TechStack() {
               return (
                 <div
                   key={tech.name}
-                  className="flex min-w-0 flex-[0_0_33.333%] justify-center sm:flex-[0_0_25%] lg:flex-[0_0_16.666%]"
+                  className="flex min-w-0 flex-[0_0_33.333%] justify-between sm:flex-[0_0_25%] lg:flex-[0_0_16.666%]"
+                  // className="flex min-w-0 flex-[0_0_33.333%] sm:flex-[0_0_25%] lg:flex-[0_0_12.5%]"
                 >
                   <div className="flex flex-col items-center gap-2">
-                   <div className="flex h-20 w-20 items-center justify-center rounded-xl border border-blue-200 bg-blue-50 text-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+                    <div className="flex h-20 w-20 items-center justify-center rounded-xl border border-blue-200 bg-blue-50 text-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
                       <Icon className="h-12 w-12" />
                     </div>
 
@@ -79,7 +81,9 @@ export default function TechStack() {
         >
           <ChevronRight className="h-6 w-6 text-slate-500" />
         </button>
-      </div>
+        </div>
+
+
     </section>
   );
 }
