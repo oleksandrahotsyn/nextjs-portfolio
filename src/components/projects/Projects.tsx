@@ -17,7 +17,7 @@ const projects = [
     description:
       "Командний проєкт корпоративного сайту. Брала участь у налаштуванні SEO-метаданих та реалізації форми зворотного зв'язку.",
     technologies: ["React", "Vite", "JavaScript", "CSS"],
-    image: "/projects/leleka.jpg",
+    image: "/public/pr4.jpg",
     link: "https://leleka-website.vercel.app/",
   },
   {
@@ -42,7 +42,7 @@ export default function Projects() {
   return (
     <Section id="projects">
       <Container>
-        <SectionTitle subtitle="Портфоліо" title="Мої проєкти" />
+        <SectionTitle subtitle="Портфоліо" title="Мої останні роботи" />
 
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
