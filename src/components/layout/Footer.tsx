@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Send, MessageCircle, Mail } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -27,33 +29,46 @@ export default function Footer() {
         </p>
 
         {/* Socials */}
-        <div className="flex gap-6">
-          <a
-            href="https://github.com/oleksandrahotsyn"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-slate-400 transition hover:text-white"
-          >
-            GitHub
-          </a>
+          <div className="flex items-center gap-5">
+            <a
+              href="https://github.com/oleksandrahotsyn"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              className="rounded-full border border-slate-800 p-3 text-slate-400 transition-all duration-300 hover:border-blue-500 hover:text-blue-500 hover:shadow-lg hover:shadow-blue-500/20"
+            >
+              <FaGithub size={20} />
+            </a>
 
-          <a
-            href="https://t.me/SandraHotsy"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-slate-400 transition hover:text-white"
-          >
-            Telegram
-          </a>
+            <a
+              href="https://t.me/SandraHotsy"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Telegram"
+              className="rounded-full border border-slate-800 p-3 text-slate-400 transition-all duration-300 hover:border-blue-500 hover:text-blue-500 hover:shadow-lg hover:shadow-blue-500/20"
+            >
+              <Send size={20} />
+            </a>
 
-          <a
-            href="sandrahotsy@gmail.com"
-            className="text-slate-400 transition hover:text-white"
-          >
-            Email
-          </a>
-        </div>
+            <a
+              href="https://wa.me/380932801670"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+              className="rounded-full border border-slate-800 p-3 text-slate-400 transition-all duration-300 hover:border-blue-500 hover:text-blue-500 hover:shadow-lg hover:shadow-blue-500/20"
+            >
+              <MessageCircle size={20} />
+            </a>
 
+            <a
+              href="mailto:oleksandrahotsyn@gmail.com"
+              aria-label="Email"
+              className="rounded-full border border-slate-800 p-3 text-slate-400 transition-all duration-300 hover:border-blue-500 hover:text-blue-500 hover:shadow-lg hover:shadow-blue-500/20"
+            >
+              <Mail size={20} />
+            </a>
+          </div>
+        
         {/* Copyright */}
         <div className="w-full border-t border-slate-800 pt-6">
           <p className="text-xs text-slate-500">
