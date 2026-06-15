@@ -34,7 +34,7 @@ export default function TechStack() {
 
   return (
     <section className="py-10">
-      <div className="mx-auto w-full max-w-7xl px-6 lg:px-8">
+      <div className="relative mx-auto w-full max-w-6xl px-12 sm:px-16">
         <h2 className="mb-6 text-center text-lg font-semibold text-slate-900">
           Технології, з якими я працюю
         </h2>
@@ -43,7 +43,7 @@ export default function TechStack() {
         <button
           type="button"
           onClick={scrollPrev}
-          className="absolute left-0 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-md transition hover:shadow-lg"
+          className="absolute left-1 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-md transition hover:shadow-lg sm:left-3"
         >
           <ChevronLeft className="h-6 w-6 text-slate-500" />
         </button>
@@ -56,8 +56,7 @@ export default function TechStack() {
               return (
                 <div
                   key={tech.name}
-                  className="flex min-w-0 flex-[0_0_33.333%] justify-between sm:flex-[0_0_25%] lg:flex-[0_0_16.666%]"
-                  // className="flex min-w-0 flex-[0_0_33.333%] sm:flex-[0_0_25%] lg:flex-[0_0_12.5%]"
+                  className="flex min-w-0 flex-[0_0_33.333%] justify-center sm:flex-[0_0_25%] lg:flex-[0_0_16.666%]"
                 >
                   <div className="flex flex-col items-center gap-2">
                     <div className="flex h-20 w-20 items-center justify-center rounded-xl border border-blue-200 bg-blue-50 text-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
@@ -77,7 +76,7 @@ export default function TechStack() {
         <button
           type="button"
           onClick={scrollNext}
-          className="absolute right-0 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-md transition hover:shadow-lg"
+          className="absolute right-1 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-md transition hover:shadow-lg sm:right-3"
         >
           <ChevronRight className="h-6 w-6 text-slate-500" />
         </button>
