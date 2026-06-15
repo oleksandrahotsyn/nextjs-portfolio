@@ -4,15 +4,36 @@ import { useState } from "react";
 import { Send } from "lucide-react";
 
 export default function ContactForm() {
-  const [isSent, setIsSent] = useState(false);
+    const [isSent, setIsSent] = useState(false);
 
-  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    setIsSent(true);
-    event.currentTarget.reset();
-  }
+    const form = event.currentTarget;
 
+    const formData = new FormData(form);
+
+    const data = {
+        name: formData.get("name"),
+        contact: formData.get("contact"),
+        service: formData.get("service"),
+        message: formData.get("message"),
+    };
+
+    const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+        "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+    });
+
+    if (response.ok) {
+        setIsSent(true);
+        form.reset();
+    }
+}
+    
   return (
     <form
       onSubmit={handleSubmit}

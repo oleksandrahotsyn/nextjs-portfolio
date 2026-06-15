@@ -15,7 +15,7 @@ export default function Footer() {
           className="group flex items-center gap-3 transition-transform duration-300 hover:scale-105"
         >
           <Image
-            src="/black.png"
+            src="/blacks.png"
             alt="SH Web Developer"
             width={100}
             height={50}
