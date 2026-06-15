@@ -1,12 +1,14 @@
 type SectionTitleProps = {
   title: string;
   subtitle?: string;
+  description?: string;
   center?: boolean;
 };
 
 export default function SectionTitle({
   title,
   subtitle,
+  description,
   center = true,
 }: SectionTitleProps) {
   return (
@@ -20,6 +22,12 @@ export default function SectionTitle({
       <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
         {title}
       </h2>
+
+      {description && (
+        <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
+          {description}
+        </p>
+      )}
     </div>
   );
 }
