@@ -41,6 +41,28 @@ export async function POST(request: Request) {
       return NextResponse.json({ success: true });
     }
 
+    // ← ДОДАТИ СЮДИ
+    const allowedServices = [
+      "Landing Page",
+      "Сайт-візитка",
+      "Редизайн сайту",
+      "Підключення форм",
+    ];
+
+    if (!allowedServices.includes(service)) {
+      return NextResponse.json(
+        { success: false, message: "Invalid service" },
+        { status: 400 }
+      );
+    }
+
+    if (!name || !contact || !service) {
+      return NextResponse.json(
+        { success: false, message: "Missing required fields" },
+        { status: 400 }
+      );
+    }
+
     if (!name || !contact || !service) {
       return NextResponse.json(
         { success: false, message: "Missing required fields" },
