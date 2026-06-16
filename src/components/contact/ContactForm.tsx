@@ -14,10 +14,11 @@ export default function ContactForm() {
     const formData = new FormData(form);
 
     const data = {
-        name: formData.get("name"),
-        contact: formData.get("contact"),
-        service: formData.get("service"),
-        message: formData.get("message"),
+      name: formData.get("name"),
+      contact: formData.get("contact"),
+      service: formData.get("service"),
+      message: formData.get("message"),
+      website: formData.get("website"),
     };
 
     const response = await fetch("/api/contact", {
@@ -70,18 +71,29 @@ export default function ContactForm() {
           <label className="mb-2 block text-sm font-medium text-slate-700">
             Який сайт потрібен?
           </label>
-          <select
-            name="service"
-            className="w-full rounded-xl border border-slate-200 px-4 py-3 text-slate-900 outline-none transition focus:border-blue-500 focus:ring-4 focus:ring-blue-100"
-          >
-            <option>Landing Page</option>
-            <option>Сайт-візитка</option>
-            <option>Редизайн сайту</option>
-            <option>Форма заявки / Telegram</option>
-            <option>Поки не знаю</option>
-          </select>
+     <select
+        name="service"
+        required
+        defaultValue=""
+        className="w-full rounded-xl border border-slate-200 px-4 py-3 text-slate-900 outline-none transition focus:border-blue-500 focus:ring-4 focus:ring-blue-100"
+      >
+        <option value="" disabled>
+          Оберіть послугу
+        </option>
+        <option value="Landing Page">Landing Page</option>
+        <option value="Сайт-візитка">Сайт-візитка</option>
+        <option value="Редизайн сайту">Редизайн сайту</option>
+        <option value="Форма заявки / Telegram">Форма заявки / Telegram</option>
+        <option value="Поки не знаю">Поки не знаю</option>
+      </select>
         </div>
-
+            <input
+              type="text"
+              name="website"
+              className="absolute -left-[9999px]"
+              tabIndex={-1}
+              autoComplete="off"
+            />
         <div>
           <label className="mb-2 block text-sm font-medium text-slate-700">
             Повідомлення
