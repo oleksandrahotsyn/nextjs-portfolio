@@ -4,8 +4,8 @@ import Projects from "@/components/projects/Projects";
 import TechStack from "@/components/techstack/TechStack";
 import About from "@/components/about/About";
 import WorkProcess from "@/components/workprocess/WorkProcess";
-import FAQ from "@/components/faq/FAQ";
 import Contact from "@/components/contact/Contact";
+import FAQ from "@/components/faq/FAQ";
 
 export default function Home() {
   return (

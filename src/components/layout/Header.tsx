@@ -6,7 +6,6 @@ const navLinks = [
   { label: "Проєкти", href: "#projects" },
   { label: "Переваги", href: "#process" },
   { label: "FAQ", href: "#faq" },
-  { label: "Контакти", href: "#contact" },
 ];
 
 export default function Header() {
@@ -40,6 +39,8 @@ export default function Header() {
               <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-blue-500 transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
+          <Link href="/faq">FAQ</Link>
+          <Link href="/contact">Контакти</Link>
         </nav>
 
         {/* CTA */}

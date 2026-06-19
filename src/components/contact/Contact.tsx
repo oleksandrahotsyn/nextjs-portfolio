@@ -32,7 +32,7 @@ export default function Contact() {
         <SectionTitle
           subtitle="Контакти"
           title="Замовити зворотній зв’язок"
-          description="Напишіть мені в Telegram, WhatsApp, Viber або залиште заявку через форму. Я не телефоную без попередньої домовленості."
+          description="Напишіть мені в Telegram, WhatsApp, Viber або залиште заявку через форму."
         />
 
         <div className="mt-12 grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
