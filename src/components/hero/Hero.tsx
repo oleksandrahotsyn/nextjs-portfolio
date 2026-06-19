@@ -21,7 +21,13 @@ export default function Hero() {
               Landing Page • Сайти-візитки • Корпоративні сайти
             </p>
 
-            <Button>Обговорити проєкт</Button>
+            <a
+              href="https://wa.me/380932801670"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>Обговорити проєкт</Button>
+            </a>
           </div>
 
           <div className="flex flex-col items-center">
