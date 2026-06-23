@@ -37,7 +37,9 @@ export default function Header() {
               <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-blue-500 transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
-          <Link href="/projects">Projects</Link>
+          <Link href="/services">Послуги</Link>
+          <Link href="/projects">Проєкти</Link>
+          <Link href="/services">Переваги</Link>
           <Link href="/faq">FAQ</Link>
           <Link href="/contact">Контакти</Link>
         </nav>
