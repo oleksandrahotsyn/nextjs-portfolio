@@ -1,24 +1,28 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import Button from "@/components/ui/Button";
 import Container from "@/components/layout/Container";
 import Section from "@/components/layout/Section";
 import Image from "next/image";
 
 export default function Hero() {
+  const t = useTranslations("hero");
   return (
     <Section className="border-b border-slate-200 bg-gradient-to-br from-blue-50 via-white to-white pt-28 pb-20">
       <Container>
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="text-left">
             <p className="mb-3 text-sm font-semibold text-blue-600 md:text-base">
-              SH Web Developer
+              {t("label")}
             </p>
 
             <h1 className="mb-5 max-w-2xl text-3xl font-bold leading-tight tracking-tight text-blue-600 sm:text-4xl md:text-5xl lg:text-6xl">
-              Створюю сучасні сайти для бізнесу
+              {t("title")}
             </h1>
 
             <p className="mb-7 max-w-xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              Landing Page • Сайти-візитки • Корпоративні сайти
+              {t("subtitle")}
             </p>
 
             <a
@@ -26,7 +30,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button>Обговорити проєкт</Button>
+              <Button>{t("button")}</Button>
             </a>
           </div>
 
@@ -43,11 +47,11 @@ export default function Hero() {
 
             <div className="mt-6 w-full max-w-sm rounded-2xl border border-slate-200 bg-white p-5 shadow-sm md:p-6">
               <p className="mb-4 text-sm font-semibold text-slate-500">
-                Технології та досвід
+                {t("experience")}
               </p>
 
               <div className="grid gap-3">
-                <HeroBadge text="2+ роки навчання Fullstack" />
+                <HeroBadge text={t("badge1")} />
                 <HeroBadge text="Next.js" />
                 <HeroBadge text="React" />
                 <HeroBadge text="TypeScript" />

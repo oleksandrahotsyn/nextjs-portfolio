@@ -1,13 +1,14 @@
 import Container from "@/components/layout/Container";
 import Section from "@/components/layout/Section";
-
-const stats = [
-  { value: "2+", label: "роки навчання Fullstack" },
-  { value: "10+", label: "навчальних і командних проєктів" },
-  { value: "100%", label: "адаптивність під різні пристрої" },
-];
+import { useTranslations } from "next-intl";
 
 export default function About() {
+  const t = useTranslations("about");
+  const stats = [
+    { value: "2+", label: t("stats.fullstack") },
+    { value: "10+", label: t("stats.projects") },
+    { value: "100%", label: t("stats.responsive") },
+  ];
   return (
     <Section id="about" className="bg-white">
       <Container>
@@ -18,26 +19,17 @@ export default function About() {
           <div className="relative grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
             <div>
               <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-blue-600">
-                Про мене
+                {t("label")}
               </p>
 
               <h2 className="max-w-md text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
-                Розробляю сайти з фокусом на дизайн, швидкість і зручність
+                {t("title")}
               </h2>
             </div>
 
             <div className="space-y-5 text-base leading-7 text-slate-600">
-              <p>
-                Мене звати Олександра, я Front-End Web Developer. Створюю
-                сучасні Landing Page та сайти-візитки для експертів, малого
-                бізнесу й особистих брендів.
-              </p>
-
-              <p>
-                Працюю з React, Next.js, TypeScript і Tailwind CSS. Для мене
-                важливо, щоб сайт не просто виглядав красиво, а був зрозумілим,
-                швидким, адаптивним і допомагав клієнтам приймати рішення.
-              </p>
+              <p>{t("paragraph1")}</p>
+              <p>{t("paragraph2")}</p>
             </div>
           </div>
 

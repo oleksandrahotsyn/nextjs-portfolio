@@ -11,7 +11,7 @@ export default function Header() {
   const locale = useLocale();
   const pathname = usePathname();
   
-  const switchLocalePath = (newLocale: "ua" | "de") => {
+  const switchLocalePath = (newLocale: "ua" | "de" | "en") => {
     return pathname.replace(`/${locale}`, `/${newLocale}`);
   };
   
@@ -56,6 +56,15 @@ export default function Header() {
               className={locale === "de" ? "text-blue-600" : "text-slate-500"}
             >
               DE
+          </Link>
+          
+          <span className="text-slate-300">|</span>
+
+            <Link
+              href={switchLocalePath("en")}
+              className={locale === "en" ? "text-blue-600" : "text-slate-500"}
+            >
+              EN
             </Link>
           </div>
         

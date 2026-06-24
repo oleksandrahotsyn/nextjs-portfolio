@@ -7,8 +7,22 @@
     "consultation": "Beratung"
   },
   "hero": {
+    "label": "SH Web Developer",
     "title": "Ich erstelle moderne Websites für Unternehmen",
     "subtitle": "Landing Pages • Visitenkarten-Websites • Unternehmenswebsites",
-    "button": "Projekt besprechen"
+    "button": "Projekt besprechen",
+    "experience": "Technologien und Erfahrung",
+    "badge1": "2+ Jahre Fullstack-Ausbildung"
+    },
+  "about": {
+  "label": "Über mich",
+  "title": "Ich entwickle Websites mit Fokus auf Design, Geschwindigkeit und Benutzerfreundlichkeit",
+  "paragraph1": "Mein Name ist Oleksandra, ich bin Front-End Web Developer. Ich erstelle moderne Landing Pages und Visitenkarten-Websites für Expertinnen, kleine Unternehmen und persönliche Marken.",
+  "paragraph2": "Ich arbeite mit React, Next.js, TypeScript und Tailwind CSS. Mir ist wichtig, dass eine Website nicht nur schön aussieht, sondern klar, schnell, responsiv und hilfreich für Entscheidungen ist.",
+  "stats": {
+    "fullstack": "Jahre Fullstack-Lernen",
+    "projects": "Lern- und Teamprojekte",
+    "responsive": "responsiv für verschiedene Geräte"
   }
+}
 }

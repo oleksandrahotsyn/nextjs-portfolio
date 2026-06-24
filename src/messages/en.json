@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact",
+    "consultation": "Consultation"
+  },
+  "hero": {
+  "label": "SH Web Developer",
+  "title": "I build modern websites for businesses",
+  "subtitle": "Landing Pages • Business Websites • Corporate Websites",
+  "button": "Discuss a Project",
+  "experience": "Technologies & Experience",
+  "badge1": "2+ years of Fullstack learning"
+    },
+  "about": {
+  "label": "About me",
+  "title": "I build websites with a focus on design, speed and usability",
+  "paragraph1": "My name is Oleksandra, and I am a Front-End Web Developer. I create modern landing pages and portfolio-style websites for experts, small businesses and personal brands.",
+  "paragraph2": "I work with React, Next.js, TypeScript and Tailwind CSS. For me, a website should not only look beautiful, but also be clear, fast, responsive and help clients make decisions.",
+  "stats": {
+    "fullstack": "years of Fullstack learning",
+    "projects": "learning and team projects",
+    "responsive": "responsive across devices"
+  }
+}
+}
