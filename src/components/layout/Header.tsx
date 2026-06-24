@@ -4,11 +4,17 @@ import Link from "next/link";
 import Image from "next/image";
 import MobileMenu from "./MobileMenu";
 import { useLocale, useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const t = useTranslations("nav");
   const locale = useLocale();
-
+  const pathname = usePathname();
+  
+  const switchLocalePath = (newLocale: "ua" | "de") => {
+    return pathname.replace(`/${locale}`, `/${newLocale}`);
+  };
+  
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-md">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
@@ -22,6 +28,7 @@ export default function Header() {
             width={100}
             height={50}
             priority
+            style={{ height: "auto" }}
           />
         </Link>
 
@@ -32,7 +39,26 @@ export default function Header() {
           <Link href={`/${locale}/faq`}>FAQ</Link>
           <Link href={`/${locale}/contact`}>{t("contact")}</Link>
         </nav>
+  
+        <div className="hidden items-center gap-4 lg:flex"></div>
+          <div className="flex items-center gap-2 rounded-full border border-slate-200 px-3 py-2 text-sm font-semibold">
+            <Link
+              href={switchLocalePath("ua")}
+              className={locale === "ua" ? "text-blue-600" : "text-slate-500"}
+            >
+              UA
+            </Link>
 
+            <span className="text-slate-300">|</span>
+
+            <Link
+              href={switchLocalePath("de")}
+              className={locale === "de" ? "text-blue-600" : "text-slate-500"}
+            >
+              DE
+            </Link>
+          </div>
+        
         <a
           href="https://wa.me/380932801670"
           target="_blank"

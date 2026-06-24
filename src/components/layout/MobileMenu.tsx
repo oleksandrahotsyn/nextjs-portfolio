@@ -1,12 +1,14 @@
 "use client";
 
+import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
-
+  const t = useTranslations("nav");
+  const locale = useLocale();
   const closeMenu = () => setIsOpen(false);
 
   return (
@@ -41,25 +43,11 @@ export default function MobileMenu() {
             </div>
 
             <nav className="flex flex-col gap-6 text-lg font-medium">
-              <Link href="/" onClick={closeMenu}>
-                Home
-              </Link>
-
-              <Link href="/services" onClick={closeMenu}>
-                Послуги
-              </Link>
-
-              <Link href="/projects" onClick={closeMenu}>
-                Проєкти
-              </Link>
-
-              <Link href="/faq" onClick={closeMenu}>
-                FAQ
-              </Link>
-
-              <Link href="/contact" onClick={closeMenu}>
-                Контакти
-              </Link>
+              <Link href={`/${locale}`}>{t("home")}</Link>
+              <Link href={`/${locale}/services`}>{t("services")}</Link>
+              <Link href={`/${locale}/projects`}>{t("projects")}</Link>
+              <Link href={`/${locale}/faq`}>FAQ</Link>
+              <Link href={`/${locale}/contact`}>{t("contact")}</Link>
             </nav>
 
             <Link
