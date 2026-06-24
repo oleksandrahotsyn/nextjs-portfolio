@@ -1,14 +1,19 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import MobileMenu from "./MobileMenu";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function Header() {
+  const t = useTranslations("nav");
+  const locale = useLocale();
+
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-md">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
-        {/* Logo */}
         <Link
-          href="/"
+          href={`/${locale}`}
           className="group flex items-center gap-3 transition-transform duration-300 hover:scale-105"
         >
           <Image
@@ -20,26 +25,24 @@ export default function Header() {
           />
         </Link>
 
-        {/* Desktop Navigation */}
         <nav className="hidden items-center gap-8 lg:flex">
-          <Link href="/">Home</Link>
-          <Link href="/services">Послуги</Link>
-          <Link href="/projects">Проєкти</Link>
-          <Link href="/faq">FAQ</Link>
-          <Link href="/contact">Контакти</Link>
+          <Link href={`/${locale}`}>{t("home")}</Link>
+          <Link href={`/${locale}/services`}>{t("services")}</Link>
+          <Link href={`/${locale}/projects`}>{t("projects")}</Link>
+          <Link href={`/${locale}/faq`}>FAQ</Link>
+          <Link href={`/${locale}/contact`}>{t("contact")}</Link>
         </nav>
 
-        {/* CTA */}
-          <a
-              href="https://wa.me/380932801670"
-              target="_blank"
+        <a
+          href="https://wa.me/380932801670"
+          target="_blank"
           rel="noopener noreferrer"
-           className="hidden lg:inline-flex items-center rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-xl"
-        > Консультація
-           </a>
+          className="hidden items-center rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-xl lg:inline-flex"
+        >
+          {t("consultation")}
+        </a>
 
-        {/* Mobile Button */}
-       <MobileMenu />
+        <MobileMenu />
       </div>
     </header>
   );

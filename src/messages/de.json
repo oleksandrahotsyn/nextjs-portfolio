@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "services": "Leistungen",
+    "projects": "Projekte",
+    "contact": "Kontakt",
+    "consultation": "Beratung"
+  },
+  "hero": {
+    "title": "Ich erstelle moderne Websites für Unternehmen",
+    "subtitle": "Landing Pages • Visitenkarten-Websites • Unternehmenswebsites",
+    "button": "Projekt besprechen"
+  }
+}
