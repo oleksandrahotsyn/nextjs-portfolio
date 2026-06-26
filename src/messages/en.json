@@ -64,6 +64,29 @@
     "previous": "Previous technologies",
     "next": "Next technologies"
     },
+    "contact": {
+        "subtitle": "Contact",
+        "title": "Request a Callback",
+        "description": "Message me on Telegram, WhatsApp, Viber or send a request through the form.",
+        "cardTitle": "Let’s Discuss Your Project",
+        "cardText": "Tell me what kind of website you need: a landing page, business website, redesign or request form. I reply in writing through the messenger that is most convenient for you."
+    },
+    "contactForm": {
+        "nameLabel": "Your name",
+        "namePlaceholder": "Oleksandra",
+        "contactLabel": "Email or phone",
+        "contactPlaceholder": "email or phone number",
+        "serviceLabel": "What kind of website do you need?",
+        "servicePlaceholder": "Choose a service",
+        "serviceBusinessCard": "Business website",
+        "serviceRedesign": "Website redesign",
+        "serviceForm": "Request form / Telegram",
+        "serviceUnknown": "Not sure yet",
+        "messageLabel": "Message",
+        "messagePlaceholder": "Briefly describe your project...",
+        "button": "Send Request",
+        "success": "Thank you! Your request has been received. I will contact you soon."
+    },
     "footer": {
     "description": "Modern landing pages and business websites for experts, freelancers and small businesses.",
     "copyright": "All rights reserved."

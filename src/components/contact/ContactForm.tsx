@@ -2,15 +2,16 @@
 
 import { useState } from "react";
 import { Send } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function ContactForm() {
-    const [isSent, setIsSent] = useState(false);
+  const t = useTranslations("contactForm");
+  const [isSent, setIsSent] = useState(false);
 
-    async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
     const form = event.currentTarget;
-
     const formData = new FormData(form);
 
     const data = {
@@ -22,19 +23,19 @@ export default function ContactForm() {
     };
 
     const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
+      method: "POST",
+      headers: {
         "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
+      },
+      body: JSON.stringify(data),
     });
 
     if (response.ok) {
-        setIsSent(true);
-        form.reset();
+      setIsSent(true);
+      form.reset();
     }
-}
-    
+  }
+
   return (
     <form
       onSubmit={handleSubmit}
@@ -43,65 +44,76 @@ export default function ContactForm() {
       <div className="grid gap-5">
         <div>
           <label className="mb-2 block text-sm font-medium text-slate-700">
-            Ваше ім’я
+            {t("nameLabel")}
           </label>
           <input
             type="text"
             name="name"
             required
-            placeholder="Олександра"
+            placeholder={t("namePlaceholder")}
             className="w-full rounded-xl border border-slate-200 px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-blue-500 focus:ring-4 focus:ring-blue-100"
           />
         </div>
 
         <div>
           <label className="mb-2 block text-sm font-medium text-slate-700">
-            Email або телефон
+            {t("contactLabel")}
           </label>
           <input
             type="text"
             name="contact"
             required
-            placeholder="email або номер телефону"
+            placeholder={t("contactPlaceholder")}
             className="w-full rounded-xl border border-slate-200 px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-blue-500 focus:ring-4 focus:ring-blue-100"
           />
         </div>
 
         <div>
           <label className="mb-2 block text-sm font-medium text-slate-700">
-            Який сайт потрібен?
+            {t("serviceLabel")}
           </label>
-     <select
-        name="service"
-        required
-        defaultValue=""
-        className="w-full rounded-xl border border-slate-200 px-4 py-3 text-slate-900 outline-none transition focus:border-blue-500 focus:ring-4 focus:ring-blue-100"
-      >
-        <option value="" disabled>
-          Оберіть послугу
-        </option>
-        <option value="Landing Page">Landing Page</option>
-        <option value="Сайт-візитка">Сайт-візитка</option>
-        <option value="Редизайн сайту">Редизайн сайту</option>
-        <option value="Форма заявки / Telegram">Форма заявки / Telegram</option>
-        <option value="Поки не знаю">Поки не знаю</option>
-      </select>
+
+          <select
+            name="service"
+            required
+            defaultValue=""
+            className="w-full rounded-xl border border-slate-200 px-4 py-3 text-slate-900 outline-none transition focus:border-blue-500 focus:ring-4 focus:ring-blue-100"
+          >
+            <option value="" disabled>
+              {t("servicePlaceholder")}
+            </option>
+            <option value="Landing Page">Landing Page</option>
+            <option value={t("serviceBusinessCard")}>
+              {t("serviceBusinessCard")}
+            </option>
+            <option value={t("serviceRedesign")}>
+              {t("serviceRedesign")}
+            </option>
+            <option value="Форма заявки / Telegram">
+              {t("serviceForm")}
+            </option>
+            <option value={t("serviceUnknown")}>
+              {t("serviceUnknown")}
+            </option>
+          </select>
         </div>
-            <input
-              type="text"
-              name="website"
-              className="absolute -left-[9999px]"
-              tabIndex={-1}
-              autoComplete="off"
-            />
+
+        <input
+          type="text"
+          name="website"
+          className="absolute -left-[9999px]"
+          tabIndex={-1}
+          autoComplete="off"
+        />
+
         <div>
           <label className="mb-2 block text-sm font-medium text-slate-700">
-            Повідомлення
+            {t("messageLabel")}
           </label>
           <textarea
             name="message"
             rows={5}
-            placeholder="Коротко опишіть ваш проєкт..."
+            placeholder={t("messagePlaceholder")}
             className="w-full resize-none rounded-xl border border-slate-200 px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-blue-500 focus:ring-4 focus:ring-blue-100"
           />
         </div>
@@ -110,13 +122,13 @@ export default function ContactForm() {
           type="submit"
           className="inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-700"
         >
-          Надіслати заявку
+          {t("button")}
           <Send className="h-4 w-4" />
         </button>
 
         {isSent && (
           <p className="rounded-xl bg-green-50 px-4 py-3 text-sm font-medium text-green-700">
-            Дякую! Заявку прийнято. Я зв’яжуся з вами найближчим часом.
+            {t("success")}
           </p>
         )}
       </div>

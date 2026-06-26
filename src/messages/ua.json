@@ -64,6 +64,29 @@
     "previous": "Попередні технології",
     "next": "Наступні технології"
     }, 
+    "contact": {
+    "subtitle": "Контакти",
+    "title": "Замовити зворотній зв’язок",
+    "description": "Напишіть мені в Telegram, WhatsApp, Viber або залиште заявку через форму.",
+    "cardTitle": "Обговоримо ваш проєкт",
+    "cardText": "Розкажіть, який сайт вам потрібен: лендінг, сайт-візитка, редизайн або форма заявки. Я відповідаю письмово у зручному для вас месенджері."
+    },
+    "contactForm": {
+        "nameLabel": "Ваше ім’я",
+        "namePlaceholder": "Олександра",
+        "contactLabel": "Email або телефон",
+        "contactPlaceholder": "email або номер телефону",
+        "serviceLabel": "Який сайт потрібен?",
+        "servicePlaceholder": "Оберіть послугу",
+        "serviceBusinessCard": "Сайт-візитка",
+        "serviceRedesign": "Редизайн сайту",
+        "serviceForm": "Форма заявки / Telegram",
+        "serviceUnknown": "Поки не знаю",
+        "messageLabel": "Повідомлення",
+        "messagePlaceholder": "Коротко опишіть ваш проєкт...",
+        "button": "Надіслати заявку",
+        "success": "Дякую! Заявку прийнято. Я зв’яжуся з вами найближчим часом."
+        },
     "footer": {
     "description": "Сучасні Landing Page та сайти-візитки для експертів, фрілансерів і малого бізнесу.",
     "copyright": "Усі права захищено."

@@ -1,8 +1,11 @@
+"use client";
+
 import Container from "@/components/layout/Container";
 import Section from "@/components/layout/Section";
 import SectionTitle from "@/components/ui/SectionTitle";
 import ContactForm from "./ContactForm";
 import { Mail, MessageCircle } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const contacts = [
   {
@@ -26,13 +29,15 @@ const contacts = [
 ];
 
 export default function Contact() {
+  const t = useTranslations("contact");
+
   return (
     <Section id="contact" className="bg-slate-50">
       <Container>
         <SectionTitle
-          subtitle="Контакти"
-          title="Замовити зворотній зв’язок"
-          description="Напишіть мені в Telegram, WhatsApp, Viber або залиште заявку через форму."
+          subtitle={t("subtitle")}
+          title={t("title")}
+          description={t("description")}
         />
 
         <div className="mt-12 grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
@@ -40,14 +45,10 @@ export default function Contact() {
 
           <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
             <h3 className="text-2xl font-bold text-slate-900">
-              Обговоримо ваш проєкт
+              {t("cardTitle")}
             </h3>
 
-            <p className="mt-4 text-slate-600">
-              Розкажіть, який сайт вам потрібен: лендінг, сайт-візитка,
-              редизайн або форма заявки. Я відповідаю письмово у зручному для
-              вас месенджері.
-            </p>
+            <p className="mt-4 text-slate-600">{t("cardText")}</p>
 
             <div className="mt-8 space-y-4">
               {contacts.map((item) => {
@@ -57,9 +58,7 @@ export default function Contact() {
                   <a
                     key={item.title}
                     href={item.href}
-                    target={
-                      item.href.startsWith("http") ? "_blank" : undefined
-                    }
+                    target={item.href.startsWith("http") ? "_blank" : undefined}
                     rel={
                       item.href.startsWith("http")
                         ? "noopener noreferrer"

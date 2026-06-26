@@ -64,6 +64,29 @@
         "previous": "Vorherige Technologien",
         "next": "Nächste Technologien"
      },
+     "contact": {
+        "subtitle": "Kontakt",
+        "title": "Rückmeldung anfragen",
+        "description": "Schreiben Sie mir über Telegram, WhatsApp, Viber oder senden Sie eine Anfrage über das Formular.",
+        "cardTitle": "Lassen Sie uns Ihr Projekt besprechen",
+        "cardText": "Erzählen Sie mir, welche Website Sie benötigen: Landing Page, Business-Website, Redesign oder Anfrageformular. Ich antworte schriftlich über den Messenger, der für Sie am bequemsten ist."
+     },
+    "contactForm": {
+        "nameLabel": "Ihr Name",
+        "namePlaceholder": "Oleksandra",
+        "contactLabel": "E-Mail oder Telefonnummer",
+        "contactPlaceholder": "E-Mail oder Telefonnummer",
+        "serviceLabel": "Welche Website benötigen Sie?",
+        "servicePlaceholder": "Leistung auswählen",
+        "serviceBusinessCard": "Business-Website",
+        "serviceRedesign": "Website-Redesign",
+        "serviceForm": "Anfrageformular / Telegram",
+        "serviceUnknown": "Ich bin mir noch nicht sicher",
+        "messageLabel": "Nachricht",
+        "messagePlaceholder": "Beschreiben Sie kurz Ihr Projekt...",
+        "button": "Anfrage senden",
+        "success": "Vielen Dank! Ihre Anfrage wurde gesendet. Ich melde mich so bald wie möglich bei Ihnen."
+    },
     "footer": {
     "description": "Moderne Landing Pages und Business-Websites für Experten, Freelancer und kleine Unternehmen.",
     "copyright": "Alle Rechte vorbehalten."
