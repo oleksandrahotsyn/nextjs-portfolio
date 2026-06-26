@@ -1,4 +1,26 @@
 {
+  "metadata": {
+    "home": {
+      "title": "Front-End Web Developer | Створення сучасних сайтів",
+      "description": "Створюю сучасні Landing Page, сайти-візитки та корпоративні сайти."
+    },
+    "services": {
+      "title": "Послуги",
+      "description": "Розробка Landing Page, сайтів-візиток і корпоративних сайтів."
+    },
+    "projects": {
+      "title": "Проєкти",
+      "description": "Мої реалізовані вебпроєкти та приклади робіт."
+    },
+    "contact": {
+      "title": "Контакти",
+      "description": "Зв'яжіться зі мною для обговорення вашого проєкту."
+    },
+    "faq": {
+      "title": "Поширені питання",
+      "description": "Відповіді на найпоширеніші запитання про розробку сайтів."
+    }
+  },
   "nav": {
     "home": "Головна",
     "services": "Послуги",
@@ -133,7 +155,7 @@
     },
     "contactForm": {
         "nameLabel": "Ваше ім’я",
-        "namePlaceholder": "Олександра",
+        "namePlaceholder": "ім’я та Прізвище",
         "contactLabel": "Email або телефон",
         "contactPlaceholder": "email або номер телефону",
         "serviceLabel": "Який сайт потрібен?",

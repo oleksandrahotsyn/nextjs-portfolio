@@ -1,4 +1,10 @@
 {
+  "metadata": {
+    "home": {
+      "title": "Front-End Webentwicklerin | Webentwicklung",
+      "description": "Ich entwickle moderne Landingpages und Unternehmenswebsites."
+    }
+  },
   "nav": {
     "home": "Startseite",
     "services": "Leistungen",
@@ -132,7 +138,7 @@
      },
     "contactForm": {
         "nameLabel": "Ihr Name",
-        "namePlaceholder": "Oleksandra",
+        "namePlaceholder": "Ihr Name",
         "contactLabel": "E-Mail oder Telefonnummer",
         "contactPlaceholder": "E-Mail oder Telefonnummer",
         "serviceLabel": "Welche Website benötigen Sie?",

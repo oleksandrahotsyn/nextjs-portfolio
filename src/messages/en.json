@@ -1,4 +1,9 @@
-{
+{  "metadata": {
+    "home": {
+      "title": "Front-End Web Developer | Website Development",
+      "description": "I build modern landing pages, business websites and corporate websites."
+    }
+  },
   "nav": {
     "home": "Home",
     "services": "Services",
@@ -133,7 +138,7 @@
     },
     "contactForm": {
         "nameLabel": "Your name",
-        "namePlaceholder": "Oleksandra",
+        "namePlaceholder": "Your name",
         "contactLabel": "Email or phone",
         "contactPlaceholder": "email or phone number",
         "serviceLabel": "What kind of website do you need?",
