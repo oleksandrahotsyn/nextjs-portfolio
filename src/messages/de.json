@@ -64,6 +64,36 @@
         "previous": "Vorherige Technologien",
         "next": "Nächste Technologien"
      },
+     "faq": {
+        "subtitle": "FAQ",
+        "title": "Häufig gestellte Fragen",
+        "description": "Antworten auf die häufigsten Fragen vor Beginn eines Projekts.",
+
+        "time": {
+            "question": "Wie lange dauert die Entwicklung einer Website?",
+            "answer": "Eine Landing Page oder Business-Website dauert in der Regel 10 bis 14 Tage. Die Dauer hängt von Design, Umfang und den bereitgestellten Materialien ab."
+        },
+
+        "texts": {
+            "question": "Helfen Sie auch bei den Texten?",
+            "answer": "Ja. Ich helfe bei der Struktur, verbessere bestehende Texte und gebe Empfehlungen für die Inhalte jeder Seite."
+        },
+
+        "responsive": {
+            "question": "Wird die Website für Smartphones optimiert sein?",
+            "answer": "Ja. Jede Website wird responsiv entwickelt und funktioniert auf Smartphone, Tablet und Desktop."
+        },
+
+        "editing": {
+            "question": "Kann ich Inhalte später ändern?",
+            "answer": "Ja. Nach dem Launch können Texte, Bilder, Dienstleistungen und andere Inhalte aktualisiert werden."
+        },
+
+        "start": {
+            "question": "Was wird für den Start benötigt?",
+            "answer": "Eine kurze Projektbeschreibung sowie – falls vorhanden – Logo, Bilder, Texte oder Beispiele von Websites, die Ihnen gefallen."
+        }
+        },
      "contact": {
         "subtitle": "Kontakt",
         "title": "Rückmeldung anfragen",

@@ -64,6 +64,36 @@
     "previous": "Previous technologies",
     "next": "Next technologies"
     },
+    "faq": {
+        "subtitle": "FAQ",
+        "title": "Frequently Asked Questions",
+        "description": "Answers to the questions clients ask most often before starting a project.",
+
+        "time": {
+            "question": "How long does it take to build a website?",
+            "answer": "A landing page or business website usually takes 10–14 days, depending on the design complexity, content and project scope."
+        },
+
+        "texts": {
+            "question": "Can you help with website content?",
+            "answer": "Yes. I can help organize your content, improve existing text and recommend what should be included on each page."
+        },
+
+        "responsive": {
+            "question": "Will the website be mobile-friendly?",
+            "answer": "Yes. Every website is fully responsive and works well on phones, tablets and desktop devices."
+        },
+
+        "editing": {
+            "question": "Can I update the website after it is launched?",
+            "answer": "Yes. You can update texts, images, services and other content whenever needed."
+        },
+
+        "start": {
+            "question": "What do you need to get started?",
+            "answer": "A short project description, along with your logo, photos, text or examples of websites you like, if available."
+        }
+        },
     "contact": {
         "subtitle": "Contact",
         "title": "Request a Callback",
