@@ -58,5 +58,10 @@
     "leleka": "Teamprojekt einer Unternehmenswebsite. Ich war für SEO-Metadaten und das Kontaktformular verantwortlich.",
     "portfolio": "Teamprojekt eines Entwickler-Portfolios. Ich war Team Lead und an der Entwicklung der Benutzeroberfläche beteiligt.",
     "greenHarvest": "Teamprojekt einer Landing Page für einen Bio-Gemüse-Service mit responsivem Design."
-    }
+    },
+    "techStack": {
+        "title": "Technologien, mit denen ich arbeite",
+        "previous": "Vorherige Technologien",
+        "next": "Nächste Technologien"
+        }
 }

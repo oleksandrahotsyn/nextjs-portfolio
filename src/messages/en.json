@@ -58,5 +58,10 @@
     "leleka": "A team project for a corporate website. I worked on SEO metadata and the contact form.",
     "portfolio": "A team portfolio project where I served as Team Lead and contributed to the user interface.",
     "greenHarvest": "A team landing page project for an organic vegetables service with a responsive design."
+    },
+    "techStack": {
+    "title": "Technologies I Work With",
+    "previous": "Previous technologies",
+    "next": "Next technologies"
     }
 }

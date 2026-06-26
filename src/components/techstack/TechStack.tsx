@@ -1,6 +1,7 @@
 "use client";
 
 import useEmblaCarousel from "embla-carousel-react";
+import { useTranslations } from "next-intl";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -24,6 +25,8 @@ const technologies = [
 ];
 
 export default function TechStack() {
+  const t = useTranslations("techStack");
+
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     align: "start",
@@ -36,13 +39,15 @@ export default function TechStack() {
     <section className="py-10">
       <div className="relative mx-auto w-full max-w-6xl px-12 sm:px-16">
         <h2 className="mb-6 text-center text-lg font-semibold text-slate-900">
-          Технології, з якими я працюю
+          {t("title")}
         </h2>
-      </div> 
+      </div>
+
       <div className="relative mx-auto max-w-7xl px-6 sm:px-12">
         <button
           type="button"
           onClick={scrollPrev}
+          aria-label={t("previous")}
           className="absolute left-1 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-md transition hover:shadow-lg sm:left-3"
         >
           <ChevronLeft className="h-6 w-6 text-slate-500" />
@@ -76,13 +81,12 @@ export default function TechStack() {
         <button
           type="button"
           onClick={scrollNext}
+          aria-label={t("next")}
           className="absolute right-1 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-md transition hover:shadow-lg sm:right-3"
         >
           <ChevronRight className="h-6 w-6 text-slate-500" />
         </button>
-        </div>
-
-
+      </div>
     </section>
   );
 }

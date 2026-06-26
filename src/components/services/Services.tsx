@@ -14,7 +14,7 @@ const serviceKeys = [
 ] as const;
 
 export default function Services() {
-  const t = useTranslations("servises");
+  const t = useTranslations("services");
 
   return (
     <Section id="services" className="bg-white py-20">
