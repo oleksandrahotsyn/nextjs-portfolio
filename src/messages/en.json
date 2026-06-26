@@ -60,8 +60,12 @@
     "greenHarvest": "A team landing page project for an organic vegetables service with a responsive design."
     },
     "techStack": {
-    "title": "Technologies I Work With",
+    "title": "Technologies. I Work With",
     "previous": "Previous technologies",
     "next": "Next technologies"
+    },
+    "footer": {
+    "description": "Modern landing pages and business websites for experts, freelancers and small businesses.",
+    "copyright": "All rights reserved."
     }
 }

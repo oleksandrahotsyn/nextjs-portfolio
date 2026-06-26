@@ -63,5 +63,9 @@
         "title": "Technologien, mit denen ich arbeite",
         "previous": "Vorherige Technologien",
         "next": "Nächste Technologien"
-        }
+     },
+    "footer": {
+    "description": "Moderne Landing Pages und Business-Websites für Experten, Freelancer und kleine Unternehmen.",
+    "copyright": "Alle Rechte vorbehalten."
+    }
 }
