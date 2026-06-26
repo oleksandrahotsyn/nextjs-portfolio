@@ -23,6 +23,30 @@
     "fullstack": "Jahre Fullstack-Lernen",
     "projects": "Lern- und Teamprojekte",
     "responsive": "responsiv für verschiedene Geräte"
+     }
+    },
+    "services": {
+  "subtitle": "Leistungen",
+  "title": "Was ich für Sie tun kann",
+
+  "landing": {
+    "title": "Landing Page",
+    "description": "Eine moderne einseitige Website zur Präsentation Ihrer Dienstleistung, Ihres Produkts oder Ihrer persönlichen Marke."
+  },
+
+  "businessCard": {
+    "title": "Visitenkarten-Website",
+    "description": "Eine kompakte Website mit Informationen über Sie, Ihre Dienstleistungen, Vorteile und Kontaktdaten."
+  },
+
+  "redesign": {
+    "title": "Website-Redesign",
+    "description": "Modernisierung des Designs, der Struktur und der Benutzerfreundlichkeit Ihrer bestehenden Website."
+  },
+
+  "integrations": {
+    "title": "Formular- und Integrationen",
+    "description": "Integration von Kontaktformularen, Telegram, WhatsApp, Zahlungsfunktionen und weiteren einfachen Diensten."
   }
 }
 }

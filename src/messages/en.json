@@ -23,6 +23,30 @@
     "fullstack": "years of Fullstack learning",
     "projects": "learning and team projects",
     "responsive": "responsive across devices"
+    }
+  },
+  "services": {
+  "subtitle": "Services",
+  "title": "What I Can Do for You",
+
+  "landing": {
+    "title": "Landing Page",
+    "description": "A modern one-page website to showcase your service, product or personal brand."
+  },
+
+  "businessCard": {
+    "title": "Business Website",
+    "description": "A clean website presenting you, your services, key benefits and contact information."
+  },
+
+  "redesign": {
+    "title": "Website Redesign",
+    "description": "Refreshing your existing website with a modern design, improved structure and better user experience."
+  },
+
+  "integrations": {
+    "title": "Forms & Integrations",
+    "description": "Integration of contact forms, Telegram, WhatsApp, payment systems and other simple services."
   }
 }
 }
