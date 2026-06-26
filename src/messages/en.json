@@ -64,6 +64,36 @@
     "previous": "Previous technologies",
     "next": "Next technologies"
     },
+    "workProcess": {
+        "subtitle": "How We Work",
+        "title": "A Clear Website Development Process",
+        "description": "You'll always know what stage your project is at and what comes next.",
+
+        "discussion": {
+            "title": "Project Discussion",
+            "description": "We discuss your goals, target audience, website structure, style and project requirements."
+        },
+
+        "design": {
+            "title": "Design",
+            "description": "I create the visual concept, choose colors, typography and an intuitive layout."
+        },
+
+        "development": {
+            "title": "Development",
+            "description": "I build a fully responsive website that works perfectly on desktop, tablet and mobile."
+        },
+
+        "testing": {
+            "title": "Testing",
+            "description": "I test forms, buttons, loading speed and ensure everything works correctly on different devices."
+        },
+
+        "launch": {
+            "title": "Launch",
+            "description": "I deploy the website, connect the domain or hosting and help with the initial setup."
+        }
+        },
     "faq": {
         "subtitle": "FAQ",
         "title": "Frequently Asked Questions",

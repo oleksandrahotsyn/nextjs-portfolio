@@ -43,7 +43,6 @@
     "title": "Website-Redesign",
     "description": "Modernisierung des Designs, der Struktur und der Benutzerfreundlichkeit Ihrer bestehenden Website."
   },
-
   "integrations": {
     "title": "Formular- und Integrationen",
     "description": "Integration von Kontaktformularen, Telegram, WhatsApp, Zahlungsfunktionen und weiteren einfachen Diensten."
@@ -64,6 +63,36 @@
         "previous": "Vorherige Technologien",
         "next": "Nächste Technologien"
      },
+     "workProcess": {
+        "subtitle": "So läuft die Zusammenarbeit",
+        "title": "Ein klarer Ablauf der Website-Entwicklung",
+        "description": "Sie wissen jederzeit, in welcher Phase sich Ihr Projekt befindet und was als Nächstes passiert.",
+
+        "discussion": {
+            "title": "Projektbesprechung",
+            "description": "Wir besprechen die Ziele Ihrer Website, die Zielgruppe, Struktur, den Stil und die wichtigsten Anforderungen."
+        },
+
+        "design": {
+            "title": "Design",
+            "description": "Ich entwickle das Designkonzept, wähle Farben, Schriftarten und eine benutzerfreundliche Struktur."
+        },
+
+        "development": {
+            "title": "Entwicklung",
+            "description": "Ich entwickle eine responsive Website, die auf Smartphone, Tablet und Desktop optimal funktioniert."
+        },
+
+        "testing": {
+            "title": "Tests",
+            "description": "Ich überprüfe Formulare, Buttons, Ladegeschwindigkeit und die Darstellung auf verschiedenen Geräten."
+        },
+
+        "launch": {
+            "title": "Veröffentlichung",
+            "description": "Ich veröffentliche die Website, verbinde Domain oder Hosting und unterstütze bei den ersten Einstellungen."
+        }
+        },
      "faq": {
         "subtitle": "FAQ",
         "title": "Häufig gestellte Fragen",

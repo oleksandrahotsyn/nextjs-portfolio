@@ -1,48 +1,28 @@
+"use client";
+
 import Container from "@/components/layout/Container";
 import Section from "@/components/layout/Section";
 import SectionTitle from "@/components/ui/SectionTitle";
+import { useTranslations } from "next-intl";
 
 const steps = [
-  {
-    number: "01",
-    title: "Обговорення проєкту",
-    description:
-      "З’ясовуємо цілі сайту, вашу аудиторію, структуру, стиль та основні задачі.",
-  },
-  {
-    number: "02",
-    title: "Підготовка дизайну",
-    description:
-      "Створюю візуальну концепцію, підбираю кольори, шрифти та зручну структуру блоків.",
-  },
-  {
-    number: "03",
-    title: "Розробка сайту",
-    description:
-      "Верстаю адаптивний сайт, який коректно виглядає на телефоні, планшеті та комп’ютері.",
-  },
-  {
-    number: "04",
-    title: "Тестування",
-    description:
-      "Перевіряю кнопки, форми, швидкість завантаження та відображення на різних екранах.",
-  },
-  {
-    number: "05",
-    title: "Запуск",
-    description:
-      "Публікую сайт, підключаю домен або хостинг та допомагаю з першими налаштуваннями.",
-  },
-];
+  { number: "01", key: "discussion" },
+  { number: "02", key: "design" },
+  { number: "03", key: "development" },
+  { number: "04", key: "testing" },
+  { number: "05", key: "launch" },
+] as const;
 
 export default function WorkProcess() {
+  const t = useTranslations("workProcess");
+
   return (
     <Section id="process" className="bg-slate-50">
       <Container>
         <SectionTitle
-          subtitle="Як проходить робота"
-          title="Зрозумілий процес створення сайту"
-          description="Ви завжди розумієте, на якому етапі знаходиться проєкт і що буде далі."
+          subtitle={t("subtitle")}
+          title={t("title")}
+          description={t("description")}
         />
 
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-5">
@@ -56,11 +36,11 @@ export default function WorkProcess() {
               </div>
 
               <h3 className="mb-3 text-lg font-bold text-slate-900">
-                {step.title}
+                {t(`${step.key}.title`)}
               </h3>
 
               <p className="text-sm leading-6 text-slate-600">
-                {step.description}
+                {t(`${step.key}.description`)}
               </p>
             </div>
           ))}
