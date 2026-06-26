@@ -1,6 +1,13 @@
-import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://sh-nextjs-portfolio.vercel.app"),
+  verification: {
+    google: "wgCQ9spDzOUgl046dI2ncQ5nm9xZ1LkconSkeBmKhKE",
+  },
+};
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -11,11 +18,6 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
-export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "My next app",
-};
 
 export default function RootLayout({
   children,
