@@ -48,5 +48,15 @@
     "title": "Forms & Integrations",
     "description": "Integration of contact forms, Telegram, WhatsApp, payment systems and other simple services."
   }
-}
+},
+    "projects": {
+    "subtitle": "Portfolio",
+    "title": "My Latest Projects",
+    "viewProject": "View Project",
+
+    "webstudio": "A responsive multi-page website for a web studio with a mobile menu and modern layout.",
+    "leleka": "A team project for a corporate website. I worked on SEO metadata and the contact form.",
+    "portfolio": "A team portfolio project where I served as Team Lead and contributed to the user interface.",
+    "greenHarvest": "A team landing page project for an organic vegetables service with a responsive design."
+    }
 }

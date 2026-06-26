@@ -47,6 +47,16 @@
   "integrations": {
     "title": "Formular- und Integrationen",
     "description": "Integration von Kontaktformularen, Telegram, WhatsApp, Zahlungsfunktionen und weiteren einfachen Diensten."
-  }
-}
+        }
+    }, 
+    "projects": {
+    "subtitle": "Portfolio",
+    "title": "Meine neuesten Projekte",
+    "viewProject": "Projekt ansehen",
+
+    "webstudio": "Responsive mehrseitige Website einer Webagentur mit mobilem Menü und modernem Layout.",
+    "leleka": "Teamprojekt einer Unternehmenswebsite. Ich war für SEO-Metadaten und das Kontaktformular verantwortlich.",
+    "portfolio": "Teamprojekt eines Entwickler-Portfolios. Ich war Team Lead und an der Entwicklung der Benutzeroberfläche beteiligt.",
+    "greenHarvest": "Teamprojekt einer Landing Page für einen Bio-Gemüse-Service mit responsivem Design."
+    }
 }

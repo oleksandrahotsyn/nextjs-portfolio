@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Button from "./Button";
+import { useTranslations } from "next-intl";
 
 type ProjectCardProps = {
   title: string;
@@ -16,6 +19,8 @@ export default function ProjectCard({
   image,
   link,
 }: ProjectCardProps) {
+  const t = useTranslations("projects");
+
   return (
     <article className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
       <div className="relative h-56 w-full">
@@ -23,6 +28,7 @@ export default function ProjectCard({
           src={image}
           alt={title}
           fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover"
         />
       </div>
@@ -52,7 +58,7 @@ export default function ProjectCard({
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Button>Дивитись проєкт</Button>
+          <Button>{t("viewProject")}</Button>
         </a>
       </div>
     </article>
