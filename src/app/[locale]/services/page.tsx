@@ -17,11 +17,15 @@ export async function generateMetadata({
   const t = await getTranslations({
     locale,
     namespace: "metadata.services",
+    
   });
 
   return {
     title: t("title"),
     description: t("description"),
+    alternates: {
+  canonical: `/${locale}/services`,
+},
   };
 }
 

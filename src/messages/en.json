@@ -1,9 +1,25 @@
 {  "metadata": {
-    "home": {
-      "title": "Front-End Web Developer | Website Development",
-      "description": "I build modern landing pages, business websites and corporate websites."
-    }
+  "home": {
+    "title": "Front-End Web Developer | Modern Website Development",
+    "description": "I build modern landing pages, business websites and corporate websites using Next.js, React and TypeScript. Responsive design, SEO optimization and high performance."
   },
+  "services": {
+    "title": "Services | SH Web Developer",
+    "description": "Development of landing pages, business websites and corporate websites. Responsive design, modern UI, form integration and basic SEO optimization."
+  },
+  "projects": {
+    "title": "Projects | SH Web Developer",
+    "description": "Explore my portfolio of landing pages, corporate websites and web applications built with Next.js, React and TypeScript."
+  },
+  "contact": {
+    "title": "Contact | SH Web Developer",
+    "description": "Get in touch to discuss your landing page, business website or corporate website project."
+  },
+  "faq": {
+    "title": "FAQ | SH Web Developer",
+    "description": "Find answers to frequently asked questions about website development, pricing, timelines, collaboration and technologies I use."
+  }
+},
   "nav": {
     "home": "Home",
     "services": "Services",

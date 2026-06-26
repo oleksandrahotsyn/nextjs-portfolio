@@ -1,10 +1,26 @@
 {
   "metadata": {
-    "home": {
-      "title": "Front-End Webentwicklerin | Webentwicklung",
-      "description": "Ich entwickle moderne Landingpages und Unternehmenswebsites."
-    }
+  "home": {
+    "title": "Front-End Webentwicklerin | Moderne Webseiten",
+    "description": "Ich entwickle moderne Landingpages, Unternehmenswebsites und Firmenwebsites mit Next.js, React und TypeScript. Responsive Design, SEO-Optimierung und hohe Performance."
   },
+  "services": {
+    "title": "Leistungen | SH Web Developer",
+    "description": "Entwicklung von Landingpages, Unternehmenswebsites und Firmenwebsites. Responsive Design, modernes UI, Formularintegration und grundlegende SEO-Optimierung."
+  },
+  "projects": {
+    "title": "Projekte | SH Web Developer",
+    "description": "Entdecken Sie meine Projekte: Landingpages, Unternehmenswebsites und Webanwendungen, entwickelt mit Next.js, React und TypeScript."
+  },
+  "contact": {
+    "title": "Kontakt | SH Web Developer",
+    "description": "Kontaktieren Sie mich, um Ihr Projekt für eine Landingpage, Unternehmenswebsite oder Firmenwebsite zu besprechen."
+  },
+  "faq": {
+    "title": "FAQ | SH Web Developer",
+    "description": "Antworten auf häufig gestellte Fragen zu Webentwicklung, Kosten, Projektablauf und den von mir verwendeten Technologien."
+  }
+},
   "nav": {
     "home": "Startseite",
     "services": "Leistungen",
