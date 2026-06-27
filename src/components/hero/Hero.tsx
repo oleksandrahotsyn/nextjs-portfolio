@@ -36,13 +36,14 @@ export default function Hero() {
 
           <div className="flex flex-col items-center">
             <div className="relative h-56 w-56 overflow-hidden rounded-full border-4 border-blue-100 bg-slate-100 shadow-lg sm:h-64 sm:w-64 md:h-80 md:w-80">
-              <Image
-                src="/ava.jpg"
-                alt="SH Web Developer"
-                fill
-                priority
-                className="object-cover"
-              />
+                <Image
+                  src="/ava.jpg"
+                  alt="Portrait of Sandra Hotsy, web developer"
+                  fill
+                  priority
+                  sizes="(max-width: 640px) 224px, (max-width: 768px) 256px, 320px"
+                  className="object-cover"
+                />
             </div>
 
             <div className="mt-6 w-full max-w-sm rounded-2xl border border-slate-200 bg-white p-5 shadow-sm md:p-6">
